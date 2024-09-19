@@ -12,8 +12,7 @@
         />
 
         <q-toolbar-title> Tea Party </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <!--login info-->
       </q-toolbar>
     </q-header>
 

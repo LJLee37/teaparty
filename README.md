@@ -1,6 +1,6 @@
 # Tea Party (teaparty)
 
-A tea review website that allows users to share their tea making methods
+A tea review website that allows users to share their tea brewing methods
 
 Built with Quasar Framework
 
