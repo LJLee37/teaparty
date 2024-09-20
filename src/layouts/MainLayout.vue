@@ -13,6 +13,7 @@
 
         <q-toolbar-title> Tea Party </q-toolbar-title>
         <!--login info-->
+        <q-btn icon="home" flat to="/" />
       </q-toolbar>
     </q-header>
 
