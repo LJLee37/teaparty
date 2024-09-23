@@ -2,15 +2,14 @@ use teaparty;
 create table users(
   id int not null auto_increment primary key,
   username varchar(255) not null unique,
-  password varchar(255) not null,
+  google_id varchar(255) not null unique,
   email varchar(255) not null,
-  nickname varchar(255) not null unique,
   created_at timestamp default current_timestamp
 );
 create table tea_company(
   id int not null auto_increment primary key,
   name varchar(255) not null unique,
-  country varchar(255) not null,
+  country varchar(255) default null,
   created_at timestamp default current_timestamp
 );
 create table tea_name(
@@ -20,8 +19,7 @@ create table tea_name(
 );
 create table leaf_type(
   id int not null auto_increment primary key,
-  type varchar(255) not null unique,
-  created_at timestamp default current_timestamp
+  type varchar(255) not null unique
 );
 create table reviews(
   id int not null auto_increment primary key,

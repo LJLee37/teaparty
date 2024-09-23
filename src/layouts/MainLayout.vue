@@ -14,13 +14,14 @@
         <q-toolbar-title> Tea Party </q-toolbar-title>
         <!--login info-->
         <q-btn icon="home" flat to="/" />
+        <q-btn icon="account_circle" flat to="/login" />
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header> Explore </q-item-label>
-
+        <!--Sign in-->
         <EssentialLink
           v-for="link in linksList"
           :key="link.title"
@@ -45,16 +46,16 @@ defineOptions({
 
 const linksList = [
   {
-    title: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
+    title: "Home",
+    caption: "teaparty.com",
+    icon: "home",
+    link: "/", //TODO: change this to redirect to home page not opening a new tab
   },
   {
     title: "Github",
-    caption: "github.com/quasarframework",
+    caption: "github.com/LJLee37/teaparty",
     icon: "code",
-    link: "https://github.com/quasarframework",
+    link: "https://github.com/LJLee37/teaparty",
   },
   {
     title: "Discord Chat Channel",
