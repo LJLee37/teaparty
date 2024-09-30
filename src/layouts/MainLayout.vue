@@ -11,9 +11,12 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Tea Party </q-toolbar-title>
+        <q-toolbar-title header>
+          <q-btn class="text-capitalize" icon="home" header flat dense to="/">
+            <div class="text-h6 q-pl-sm">Tea Party</div>
+          </q-btn>
+        </q-toolbar-title>
         <!--login info-->
-        <q-btn icon="home" flat to="/" />
         <q-btn icon="account_circle" flat to="/login" />
       </q-toolbar>
     </q-header>
